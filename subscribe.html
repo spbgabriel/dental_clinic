@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dental Clinic - Subscribe</title>
+        <link rel="stylesheet" href="/dentalclinic/dental_clinic_stylesheet.css">
+        <!--font style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header_title">
+                <i class="fa fa-tooth fa-2x"></i>
+                <h1></i>Dental Clinic</h1>
+                <i class="fa fa-tooth fa-2x"></i>
+            </div>
+    
+            <ul id="navigation-bar">
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/dental_clinic_web.html" target="_blank" class="resize_icon"><i class="fa-solid fa-house fa-2x"></i></a>
+                        <a href="/dentalclinic/dental_clinic_web.html" target="_blank" class="nav_text"><p>Home page</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/know_our_team.html" target="_blank" class="resize_icon"><i class="fa fa-user-nurse fa-2x"></i></a>
+                        <a href="/dentalclinic/know_our_team.html" target="_blank" class="nav_text"><p>Know our team</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/locations.html" target="_blank" class="resize_icon"><i class="fa fa-map fa-2x"></i></a>
+                        <a href="/dentalclinic/locations.html" target="_blank" class="nav_text"><p>Our locations</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/make_an_appointment.html" target="_blank" class="resize_icon"><i class="fa fa-calendar-check fa-2x"></i></a>
+                        <a href="/dentalclinic/make_an_appointment.html" target="_blank" class="nav_text"><p>Make an appointment</p></a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <h2>Subscribe our newsletter</h2>
+            <p id="description_text">Receive a weekly mail with everything new about the <strong>Dental Clinic</strong>!</p>
+            <article>
+                <!--I NEED TO MAKE THESE ELEMENTS FOLDED AND APPEAR ONLY WHEN THE USER CLINK ON IT-->
+                <h3><i class="fa-solid fa-shield"></i> Privacy policy and terms <i class="fa-solid fa-shield"></i></h3>
+                <p>At Dental Clinic, your privacy is important to us. When you subscribe through our form, we collect only the necessary personal information—such as your name, email address, and phone number—to provide updates, appointment reminders, and relevant dental health information.</p>
+                <h4 class=""><i class="fa-solid fa-lock"></i> How we use your data</h4>
+                <ul>
+                    <li>To send newsletters, promotions, and clinic updates</li>
+                    <li>To remind you of upcoming appointments or follow-ups</li>
+                    <li>To improve our services and communication</li>
+                </ul>
+                <h4><i class="fa-solid fa-folder"></i> Data protection</h4>
+                <ul>
+                    <li>We store your information securely and do not share, sell, or rent it to third parties. Access is restricted to authorized clinic staff only.</li>
+                </ul>
+                <h4><i class="fa-solid fa-xmark"></i> Opt-Out Anytime</h4>
+                <ul>
+                    <li>You can unsubscribe or request data deletion at any time by contacting us at <em>dental_clinic@outlook.com</em></li>
+                </ul>
+            </article>
+            <!--SUBCRIPTION FORM-->
+            <h3><i class="fa-solid fa-pencil"></i> Subscription form <i class="fa-solid fa-pencil"></i></h3>
+            <h4><i class="fa-solid fa-user"></i> Personal information</h4>
+            <div class="form_container_2">
+                <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name">
+                <!--change the size of this section here to fit the ages in the selection-->
+                <label for="age">Age</label>
+                    <div id="form_age">
+                    <select id="age" name="age">
+                        <option>18-23</option>
+                        <option>24-29</option>
+                        <option>30-35</option>
+                        <option>36-40</option>
+                        <option>41-45</option>
+                        <option>46-50</option>
+                        <option>51+</option>
+                    </select>
+                    </div>
+                <label for="gender">Gender</label>
+                <!--change the orientation to be like the other form-->
+                    <label for="male">
+                    <input type="checkbox" id="gender" value="Male">Male
+                    </label>
+                    <label for="female">
+                    <input type="checkbox" id="gender" value="Female">Female
+                    </label>
+                    <label for="other">
+                    <input type="checkbox" id="other" value="other">Other
+                    </label>
+                <label for="email">Email adress</label>
+                    <input type="email" id="email">
+                <label for="preferences">I'm interested in:</label>
+                    <select id="preferences" name="preferences">
+                        <option value="choose">Choose one of the options</option>
+                        <option value="appointment">Appointments</option>
+                        <option value="special offers">Special Offers</option>
+                        <option value="dental health">Dental health</option>
+                    </select>
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    I agree to receive emails from SmileCare Dental and understand I can unsubscribe at any time.
+                </label>
+            </div>
+            <button type="submit" id="subscribe_button">Subscribe</button>
+        </main>
+    </body>
+    <footer>
+        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
+    </footer>
+</html>

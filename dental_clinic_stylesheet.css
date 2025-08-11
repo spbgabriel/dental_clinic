@@ -1,0 +1,533 @@
+/* GENERAL STYLE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    color: #0A4174;
+    background-color: #D0E6FD;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* header style */
+
+.header_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 2%;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #49769F;
+}
+
+#navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    color: #D0E6FD;
+    background-color: #49769F;
+}
+
+.navigation_icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation_icon p {
+    width: 100%;
+    padding: 2px 5px;
+}
+
+.navigation_icon a {
+    border-bottom-right-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* TO THE MEDIA QUERY, MAKE THIS PART ONLY WITH THE ICONS; DON'T SHOW THE TEXT */
+
+/* ABOUT US */
+.container_1 {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 60vh;
+    width: 100%;
+    padding-top: 2%;
+    border-bottom: 2px solid #0A4174;
+    background-image: url(./images/cover_index.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.about-us {
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.about-us h2 {
+    width: fit-content;
+    padding:4%;
+    color: white;
+    background-color: #49769F;
+    text-align:end;
+}
+
+.about-us p {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #49769F;
+    text-align: justify;
+}
+
+/* SPECIALTIES */
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8% 2% 8%;
+}
+
+.container_2 h2 {
+    width: fit-content;
+    padding: 2%;
+    background-color: #49769F;
+    color: white;
+}
+
+.specialties_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.spc_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1.5%;
+    border: 1px solid #49769F;
+    margin-bottom: 2%;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 500ms ease-out;
+    box-sizing: border-box;
+}
+
+/* Center the second row if it has fewer than 3 items */
+.specialties_container > .spc_box:nth-child(n+4) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spc_title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.spc_box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.spc_box:hover {
+    max-height: 500px;
+}
+
+.spc_box img,
+.spc_box p:not(.spc_title) {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 100ms linear;
+}
+
+.spc_box:hover img,
+.spc_box:hover p:not(.spc_title) {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+/* reviews style */
+
+.container_3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8% 0 8%;
+    border-top: 2px solid #0A4174;
+}
+
+.container_3 h3 {
+    width: fit-content;
+    padding: 2%;
+    background-color: #49769F;
+    color: white;
+}
+
+.review_container {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.review_box {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 1% 2%;
+    border: 1px white solid;
+}
+
+.review_box p {
+    text-align: justify;
+}
+
+/* footer style */
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 2px solid #0A4174;
+}
+
+/* know_our_team style */
+
+.container_subpages {
+    margin: 0 2%;
+}
+
+.spec_team {
+    width: fit-content;
+    padding: 1%;
+    background-color: #49769F;
+    color: white;
+}
+
+.box_doctors {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    padding: 1.5%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+/* locations_style */
+
+.location_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6%;
+    margin: 2% 3%;
+}
+
+.location_box a {
+    color: #0A4174;
+    text-decoration: none;
+}
+
+.location_adress{
+    display: flex;
+    flex-direction: column;
+}
+
+/* make your appointment style */
+
+#appointment_title {
+    text-align: center;
+}
+
+.form_container {
+    padding: 2%;
+    margin: 2%;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container label {
+    width: 50%;
+    padding: 0.5%;
+    margin: 2% 5%;
+    background-color: #49769F;
+    color: white;
+}
+
+#date {
+    font-family: Montserrat, sans-serif;
+}
+
+#yes_or_no_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#name {
+    width: 40%;
+    padding: 0.5% 1%;
+}
+
+#email {
+    width: 40%;
+    padding: 0.5% 1%;
+}
+
+#phonenumber {
+    width: 40%;
+    padding: 0.5% 1%;
+}
+
+.form_container button {
+    height: auto;
+    width: 10%;
+    color: white;
+    background-color: #0A4174;
+    font-size: 1.2rem;
+}
+
+/* newletter style */
+
+main {
+    margin: 1.5% 3%;
+}
+
+main h2 {
+    width: 100%;
+    margin: 3% 0;
+    text-align: center;
+}
+
+article ul {
+    padding: 1.5% 3%;
+    border: 1px #49769F solid;
+}
+
+.form_container_2 {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.form_container_2 label {
+    padding: 1.2%;
+    font-weight: bold;
+}
+
+#form_age {
+    width: 50px;
+    padding: 5px;
+}
+
+#subscribe_button {
+    width: 150px;
+    margin: 10px;
+    color: white;
+    background-color: #49769F;
+    font-family: Montserrat, sans;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .header_title {
+        flex-direction: row;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+/* Fix for radio button labels in appointment form */
+.form_container label.radio_choice {
+    width: auto;
+    padding: 0;
+    margin: 0 5px;
+    background-color: transparent;
+    color: inherit;
+}
+#date {
+    font-family: Montserrat, sans-serif;
+}
+
+/* Added for subscribe form gender selection */
+.gender-selection {
+    display: flex;
+    gap: 15px;
+}
+
+.gender-selection label {
+    font-weight: normal;
+}
+
+#form_age {
+    width: 50px;
+    padding: 5px;
+        border: 1px solid #49769F;
+    }
+
+    /* --- ADDED STYLES FOR OTHER PAGES --- */
+
+    /* know_our_team.html & locations.html */
+    .box_doctors,
+    .location_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .box_doctors img,
+    .location_box img {
+        width: 50%;
+        height: auto;
+    }
+
+    .box_doctors article {
+        width: 100%;
+    }
+
+    /* make_an_appointment.html */
+    .form_container {
+        margin: 2% 0;
+        padding: 2% 0;
+    }
+
+    .form_container label {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #name,
+    #email,
+    #phonenumber,
+    .form_container select,
+    .form_container textarea {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .form_container button {
+        width: 40%;
+        padding: 10px;
+    }
+
+    /* subscribe.html */
+    .form_container_2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gender-selection {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    #navigation-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        gap: 50px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .nav_text {
+        display: none;
+    }
+
+    .navigation_icon {
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+
+    .container_1 {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        background-color: #D0E6FD;
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .about-us {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .container_2 {
+        margin-top: 0;
+    }
+
+    .specialties_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .spc_box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1%;
+        background-color: #D0E6FD;
+        border: 1px solid #49769F;
+    }
+
+    .spc_box p {
+        text-align: center;
+    }
+
+    .review_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 3%;
+    }
+
+    .review_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 3%;
+        background-color: #D0E6FD;
+        border: 1px solid #49769F;
+    }
+}
+

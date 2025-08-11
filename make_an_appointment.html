@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dental Clinic - Find our clincs!</title>
+        <link rel="stylesheet" href="/dentalclinic/dental_clinic_stylesheet.css">
+        <!--font style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header_title">
+                <i class="fa fa-tooth fa-2x"></i>
+                <h1></i>Dental Clinic</h1>
+                <i class="fa fa-tooth fa-2x"></i>
+            </div>
+    
+            <ul id="navigation-bar">
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/dental_clinic_web.html" target="_blank" class="resize_icon"><i class="fa-solid fa-house fa-2x"></i></a>
+                        <a href="/dentalclinic/dental_clinic_web.html" target="_blank" class="nav_text"><p>Home page</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/know_our_team.html" target="_blank" class="resize_icon"><i class="fa fa-user-nurse fa-2x"></i></a>
+                        <a href="/dentalclinic/know_our_team.html" target="_blank" class="nav_text"><p>Know our team</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/locations.html" target="_blank" class="resize_icon"><i class="fa fa-map fa-2x"></i></a>
+                        <a href="/dentalclinic/locations.html" target="_blank" class="nav_text"><p>Our locations</p></a>
+                </li>
+                <li class="navigation_icon">
+                        <a href="/dentalclinic/subscribe.html" target="_blank" class="resize_icon"><i class="fa fa-envelope fa-2x"></i></a>
+                        <a href="/dentalclinic/subscribe.html" target="_blank" class="nav_text"><p>Subscribe our newsletter</p></a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <h2 id="appointment_title">Schedule here your appointment</h2>
+            <div class="form_container">
+                <form action="" method="post">
+                    <!--personal info-->
+                    <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    <label for="phone">Phone number</label>
+                        <input type="number" id="phonenumber" name="phonenumber">
+                    <!--appointment info-->
+                    <label for="date">Select a date:</label>
+                        <input type="date" id="date" name="date"> 
+                    <label for="specialty">Select the specialty:</label>
+                        <select id="specialty" name="specialty">
+                            <option value="choose">Choose one of the options</option>
+                            <option value="implants">Implants</option>
+                            <option value="periodontics">Periodontics</option>
+                            <option value="orthodontics">Orthodontics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="general">General dentist</option>
+                        </select>
+                    <label for="existing patient">Are you already out patient?</label>
+                        <div id="yes_or_no_box">
+                            <input type="radio" id="yes" name="Yes" value="yes">
+                            <label for="yes" class="radio_choice">Yes</label>
+                            <input type="radio" id="no" name="no" value="no">
+                            <label for="no" class="radio_choice">No</label>
+                        </div>
+                    <label for="description">What do you need?</label>
+                        <textarea id="description" name="description" rows="15" cols="80">Tell us what you need.</textarea>
+                    <br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
+    </footer>
+</html>
